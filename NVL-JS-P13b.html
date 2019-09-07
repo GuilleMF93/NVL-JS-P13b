@@ -10,8 +10,8 @@
 
  <script>
  	function esPalindromo(frase) {
- 		var re = /[^A-Za-z0-9]/g;
- 		frase = frase.toLowerCase().replace(re, '');
+ 		var nivelar = /[^A-Za-z0-9]/g;
+ 		frase = frase.toLowerCase().replace(nivelar, '');
  		var len = frase.length;
 		for (var i = 0; i < len/2; i++) {
    			if (frase[i] !== frase[len - 1 - i]) {
@@ -21,7 +21,7 @@
  		return true;
  	}
  	
- 	var frase = "oso";
+ 	var frase = "Anita, la gorda lagartona, no traga la droga latina"; //Ejemplo de https://www.lifeder.com/ejemplos-palindromos/
  	
  	if(typeof frase === 'string'){
  		esPalindromo(frase);
